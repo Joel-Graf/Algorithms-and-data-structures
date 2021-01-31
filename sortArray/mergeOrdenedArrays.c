@@ -38,7 +38,7 @@ int main(int argc, char const *argv[]) {
 
   mergeArrays(arrayA, sizeArrayA, arrayB, sizeArrayB, resultArray);
   printf("Elementos em Ordem:\n");
-  for (int i = 0; i < 14; i++) {
+  for (int i = 0; i < sizeArrayA + sizeArrayB; i++) {
     printf("e[%i]: %d\n", i, resultArray[i]);
   }
 
