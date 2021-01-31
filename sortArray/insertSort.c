@@ -6,11 +6,11 @@ void swap(int *elementA, int *elementB) {
   *elementB = aux;
 }
 
-void insertSort(int *array, int arraySize) { 
-  for(int i = 1; i < arraySize; i++) {
-    for(int j = i; j > 0; j--) {
-      if(array[j] < array[j-1])
-        swap(&array[j], &array[j-1]);
+void insertSort(int *array, int arraySize) {
+  for (int i = 1; i < arraySize; i++) {
+    for (int j = i; j > 0; j--) {
+      if (array[j] < array[j - 1])
+        swap(&array[j], &array[j - 1]);
     }
   }
 }

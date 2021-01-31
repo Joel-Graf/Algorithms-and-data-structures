@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-void intercalar(int *arrayA, int sizeArrayA, int *arrayB, int sizeArrayB, int *resultArray) {
+void mergeArrays(int *arrayA, int sizeArrayA, int *arrayB, int sizeArrayB, int *resultArray) {
   int counterArrayA = 0;
   int counterArrayB = 0;
   int counterResult = 0;
-    
+
   while (counterArrayA < sizeArrayA && counterArrayB < sizeArrayB) {
     if (arrayA[counterArrayA] < arrayB[counterArrayB]) {
       resultArray[counterResult] = arrayA[counterArrayA];
@@ -36,7 +36,7 @@ int main(int argc, char const *argv[]) {
   int sizeArrayB = sizeof(arrayB) / sizeof(int);
   int resultArray[sizeArrayA + sizeArrayB];
 
-  intercalar(arrayA, sizeArrayA, arrayB, sizeArrayB, resultArray);
+  mergeArrays(arrayA, sizeArrayA, arrayB, sizeArrayB, resultArray);
   printf("Elementos em Ordem:\n");
   for (int i = 0; i < 14; i++) {
     printf("e[%i]: %d\n", i, resultArray[i]);
