@@ -6,7 +6,7 @@ int binarySearch(int *array, int arraySize, int targetValue) {
   int guess;
 
   while (max >= min) {
-    guess = (max - min) / 2 + min;
+    guess = (max + min) / 2;
     if (array[guess] == targetValue)
       return guess;
     else if (array[guess] < targetValue)
