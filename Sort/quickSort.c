@@ -7,24 +7,24 @@ void swap(int *elementA, int *elementB) {
 }
 
 int pivotArray(int *array, int start, int end) {
-  int pivot = array[end-1];
+  int pivot = array[end - 1];
   int lastLowerElemenent = start;
-  for(int i = start; i < end-1; i++) {
-    if(array[i] <= pivot) {
+  for (int i = start; i < end - 1; i++) {
+    if (array[i] <= pivot) {
       swap(&array[i], &array[lastLowerElemenent]);
       lastLowerElemenent++;
     }
   }
-  swap(&array[end-1], &array[lastLowerElemenent]);
+  swap(&array[end - 1], &array[lastLowerElemenent]);
   return lastLowerElemenent;
 }
 
 void quickSort(int *array, int start, int end) {
   int numberOfElements = end - start;
-  if(numberOfElements > 1) {
-    int pivot = pivotArray(array, start, end); 
+  if (numberOfElements > 1) {
+    int pivot = pivotArray(array, start, end);
     quickSort(array, start, pivot);
-    quickSort(array, pivot+1, end);
+    quickSort(array, pivot + 1, end);
   }
 }
 
