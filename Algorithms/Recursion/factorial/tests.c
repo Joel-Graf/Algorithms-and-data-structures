@@ -8,14 +8,14 @@ int tests_run = 0;
 static char *positiveInteger() {
   int positiveInteger = 5;
   int result = factorial(positiveInteger);
-  mu_assert("Error: factorial(5) != 120", result == 120);
+  mu_assert("Error: result != 120", result == 120);
   return 0;
 }
 
 static char *negativeInteger() {
   int negativeInteger = -3;
   int result = factorial(negativeInteger);
-  mu_assert("Error: factorial(-3) != 1", result == 1);
+  mu_assert("Error: result != 1", result == 1);
   return 0;
 }
 
