@@ -17,9 +17,3 @@ int binarySearch(int *array, int arraySize, int targetValue) {
 
   return -1;
 }
-
-int main(int argc, char const *argv[]) {
-
-
-  return 0;
-}
