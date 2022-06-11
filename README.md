@@ -3,7 +3,7 @@
 
 ## Algorithms
 
-### Recursion
+### [Recursion](Algorithms/Recursion)
 #### factorial
 #### palindrome
 
