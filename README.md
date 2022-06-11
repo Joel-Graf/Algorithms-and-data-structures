@@ -1,3 +1,2 @@
 # Algorithms and Data Structures
- My Study Repository
- 
+## An personal study repository, where I save Algorithms and Data Structures implemented in C
